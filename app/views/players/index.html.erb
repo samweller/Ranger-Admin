@@ -1,0 +1,55 @@
+<h1>Listing players</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Suburb</th>
+    <th>Pcode</th>
+    <th>Email</th>
+    <th>Dob</th>
+    <th>Emergencyname</th>
+    <th>Emergencynumber</th>
+    <th>Mobile</th>
+    <th>Height</th>
+    <th>Weight</th>
+    <th>Yearssenior</th>
+    <th>Yearsjunior</th>
+    <th>Position1</th>
+    <th>Position2</th>
+    <th>Goals</th>
+    <th>Comments</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @players.each do |player| %>
+  <tr>
+    <td><%= player.name %></td>
+    <td><%= player.address %></td>
+    <td><%= player.suburb %></td>
+    <td><%= player.pcode %></td>
+    <td><%= player.email %></td>
+    <td><%= player.dob %></td>
+    <td><%= player.emergencyName %></td>
+    <td><%= player.emergencyNumber %></td>
+    <td><%= player.mobile %></td>
+    <td><%= player.height %></td>
+    <td><%= player.weight %></td>
+    <td><%= player.yearsSenior %></td>
+    <td><%= player.yearsJunior %></td>
+    <td><%= player.position1 %></td>
+    <td><%= player.position2 %></td>
+    <td><%= player.goals %></td>
+    <td><%= player.comments %></td>
+    <td><%= link_to 'Show', player %></td>
+    <td><%= link_to 'Edit', edit_player_path(player) %></td>
+    <td><%= link_to 'Destroy', player, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Player', new_player_path %>

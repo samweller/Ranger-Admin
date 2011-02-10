@@ -1,0 +1,90 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @player.name %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @player.address %>
+</p>
+
+<p>
+  <b>Suburb:</b>
+  <%= @player.suburb %>
+</p>
+
+<p>
+  <b>Pcode:</b>
+  <%= @player.pcode %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @player.email %>
+</p>
+
+<p>
+  <b>Dob:</b>
+  <%= @player.dob %>
+</p>
+
+<p>
+  <b>Emergencyname:</b>
+  <%= @player.emergencyName %>
+</p>
+
+<p>
+  <b>Emergencynumber:</b>
+  <%= @player.emergencyNumber %>
+</p>
+
+<p>
+  <b>Mobile:</b>
+  <%= @player.mobile %>
+</p>
+
+<p>
+  <b>Height:</b>
+  <%= @player.height %>
+</p>
+
+<p>
+  <b>Weight:</b>
+  <%= @player.weight %>
+</p>
+
+<p>
+  <b>Yearssenior:</b>
+  <%= @player.yearsSenior %>
+</p>
+
+<p>
+  <b>Yearsjunior:</b>
+  <%= @player.yearsJunior %>
+</p>
+
+<p>
+  <b>Position1:</b>
+  <%= @player.position1 %>
+</p>
+
+<p>
+  <b>Position2:</b>
+  <%= @player.position2 %>
+</p>
+
+<p>
+  <b>Goals:</b>
+  <%= @player.goals %>
+</p>
+
+<p>
+  <b>Comments:</b>
+  <%= @player.comments %>
+</p>
+
+
+<%= link_to 'Edit', edit_player_path(@player) %> |
+<%= link_to 'Back', players_path %>
