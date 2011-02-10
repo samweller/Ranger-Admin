@@ -54,3 +54,21 @@ div.field, div.actions {
   font-size: 12px;
   list-style: square;
 }
+
+.field {
+  clear: both;
+}
+
+.field label {
+  display: inline-block;
+  float: left;
+  width: 180px;
+}
+
+
+textarea {
+  width: 400px;
+  height: 100px;
+}
+
+
