@@ -11,58 +11,91 @@
     </div>
   <% end %>
 
+
+<fieldset>
+  <legend>Tell us a little about yourself</legend>
+
   <div class="field">
-    <%= f.label :name, "Player Name" %>
+    <%= f.label :name, "Your Name" %>
     <%= f.text_field :name %>
   </div>
-  <div class="field">
-    <%= f.label :address %>
-    <%= f.text_field :address %>
-  </div>
-  <div class="field medium-field">
-    <%= f.label :suburb %>
-    <%= f.text_field :suburb %>
-  </div>
-  <div class="field short-field">
-    <%= f.label :pcode %>
-    <%= f.text_field :pcode %>
-  </div>
+
+  
   <div class="field">
     <%= f.label :email %>
     <%= f.text_field :email %>
   </div>
+
   <div class="field">
+    <%= f.label :address %>
+    <%= f.text_field :address %>
+  </div>
+
+  
+  <div class="field medium-field">
+    <%= f.label :suburb %>
+    <%= f.text_field :suburb %>
+  </div>
+  <div class="field second-medium-field">
+    <%= f.label :pcode, "Postcode" %>
+    <%= f.text_field :pcode %>
+  </div>
+  
+  <div class="clearBoth"></div>
+  
+
+  <div class="field medium-field">
+    <%= f.label :mobile, "Your Mobile Number" %>
+    <%= f.text_field :mobile %>
+  </div>
+  <div class="field second-medium-field">
     <%= f.label :dob, "Date of Birth" %>
     <%= f.text_field :dob %>
   </div>
-  <div class="field">
+  
+  <div class="clearBoth"></div>
+  
+  <div class="field medium-field">
     <%= f.label :emergencyName, "Emergency Contact Name" %>
     <%= f.text_field :emergencyName %>
   </div>
-  <div class="field">
-    <%= f.label :emergencyNumber, "Emergency Contact Phone" %>
+  <div class="field second-medium-field">
+    <%= f.label :emergencyNumber, "Emerg. Phone" %>
     <%= f.text_field :emergencyNumber %>
   </div>
-  <div class="field">
-    <%= f.label :mobile %>
-    <%= f.text_field :mobile %>
-  </div>
-  <div class="field">
+  
+  <div class="clearBoth"></div>
+  
+  
+  </fieldset>
+  
+  
+  <fieldset>
+    <legend>Now some playing details</legend>
+  
+    
+  <div class="field medium-field">
     <%= f.label :height, "Height (cms)" %>
     <%= f.text_field :height %>
   </div>
-  <div class="field">
+  <div class="field second-medium-field">
     <%= f.label :weight, "Weight (kgs)" %>
     <%= f.text_field :weight %>
   </div>
-  <div class="field">
+  
+    <div class="clearBoth"></div>
+  
+  <div class="field medium-field">
     <%= f.label :yearsSenior, "Years playing seniors" %>
     <%= f.text_field :yearsSenior %>
   </div>
-  <div class="field">
-    <%= f.label :yearsJunior, "Years playing juniors" %>
+  <div class="field second-medium-field">
+    <%= f.label :yearsJunior, "Juniors" %>
     <%= f.text_field :yearsJunior %>
   </div>
+  
+    <div class="clearBoth"></div>
+  
   <div class="field">
     <%= f.label :position1, "Position Preference #1" %>
     <%= f.text_field :position1 %>
@@ -71,6 +104,14 @@
     <%= f.label :position2, "Position Preference #2" %>
     <%= f.text_field :position2 %>
   </div>
+  
+  
+  </fieldset>
+  
+  
+  <fieldset>
+    <legend>Finally, tell us what you think</legend>
+  
   <div class="field">
     <%= f.label :goals, "Goals for the season (personal and team)" %>
     <%= f.text_area :goals %>
@@ -79,6 +120,9 @@
     <%= f.label :comments, "Any other comments" %>
     <%= f.text_area :comments %>
   </div>
+  
+  </fieldset>
+  
   <div class="actions">
     <%= f.submit %>
   </div>

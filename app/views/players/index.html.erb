@@ -1,21 +1,19 @@
-<h1>Listing players</h1>
+<h1>2011 Ranger Players</h1>
 
-<table width="600">
+<table width="900">
   <tr>
     <th>Name</th>
     <th>Email</th>
     <th>Mobile</th>
-    <th>View</th>
     <!--<th></th>
     <th></th>-->
   </tr>
 
 <% @players.each do |player| %>
   <tr>
-    <td><%= player.name %></td>
+    <td><%= link_to player.name, player %></td>
     <td><%= player.email %></td>
     <td><%= player.mobile %></td>
-    <td><%= link_to 'Show', player %></td>
   </tr>
 <% end %>
 </table>
